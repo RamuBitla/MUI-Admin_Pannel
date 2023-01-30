@@ -1,0 +1,125 @@
+.datatable{
+    height: 581px;
+    padding:27px ;
+    
+    .dataUserInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 400;
+        color: gray;
+        padding-bottom: 15px;
+
+        .newuser{
+            color: green;
+            border: 1px solid green;
+            font-size: 14px;
+            padding: 5px;
+        }
+        
+    }
+    .cellWithImg{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .cellImg{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+
+    }
+    .cellWithStatus{
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+
+        &.Active{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.144);
+        }
+
+        &.Pending{
+            color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.199);
+        }
+
+        &.Passive{
+            color: crimson;
+            background-color: rgba(220, 20, 60, 0.144);
+        }
+    }
+
+    .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .viewbutton{
+            color: blue;
+            border: 1px solid rgba(0, 0, 255, 0.301);
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .deletebutton{
+            color: red;
+            border: 1px solid rgba(255, 17, 0, 0.301);
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+//@at-root
+@media screen and (max-width: 375px) {
+    .datatable{
+        font-size: 12px;
+        width: 93%;
+        padding: 10px;
+        height: 90vh;
+        
+        .dataUserInfo{
+          width: 100%;
+          align-items: center;
+           
+            padding-bottom: 10px;
+                p{
+                    font-size: 14px;
+                }
+    
+            .newuser{
+                font-size: 10px;
+            }
+            
+        }
+
+        .datagrid{
+            font-size: 12px;
+            padding: 0px;
+        }
+        .cellWithImg{
+            font-size: 12px;
+            .cellImg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    
+        .cellAction{
+            .viewbutton, .deletebutton{
+                font-size: 10px;
+            }
+    
+        }
+
+        .cellWithStatus{
+          font-size: 10px;
+    }
+}
+}

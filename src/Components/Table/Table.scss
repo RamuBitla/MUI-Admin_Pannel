@@ -1,0 +1,77 @@
+.table{
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .image{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+    }
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+        
+        &.Approved{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.144);
+        }
+
+        &.Pending{
+            color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.199);
+        }
+    }
+}
+
+
+//@at-root
+@media screen and (max-width: 375px) {
+    .table{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .cellWrapper{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            .image{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+    
+        }
+
+        .tablecell{
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table{
+        width: 100%;
+        .cellWrapper{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            .image{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+            }
+    
+        }
+
+        .tablecell{
+            font-size: 10px;
+        }
+    }
+}

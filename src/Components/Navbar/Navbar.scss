@@ -1,0 +1,175 @@
+.navbar{
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 15px;
+    
+
+    .search{
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(185, 184, 184);
+        padding: 2px;
+
+        .icon{
+            width: 20px;
+            color: rgb(97, 96, 96);
+        }
+    }
+    
+    input{
+        border: none;
+        outline: none;
+        padding: 1px;
+        background-color: transparent;
+    }
+    
+    .items{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
+        color: #888;
+        font-weight: bold;
+        
+        .icon{
+            width: 20px;
+        }
+
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .counter{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            right: -6px;
+        }
+    }
+
+}
+
+hr{
+    height: 0;
+    width: 100%;
+    border: 0.3px solid rgb(228, 225, 225);
+}
+
+
+
+}
+
+//=================== [ MEDIA-QUARY FOR NAVBAR ] ======================================
+
+@media (max-width: 768px){
+.navbar{
+    .wrapper{
+        .items{
+            display: none;
+           }
+
+        .right-nav{
+            display: flex;  
+            gap: 10px;
+        } 
+        
+        .left-arrow{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .logo{
+                font-weight: 400;
+            }
+
+            .list-icon{
+                color: gray;
+                
+                .icon{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 375px) {
+    .navbar{
+        .wrapper{
+            width: 40%;
+            gap: 3.3rem;
+            padding: 0px;
+
+            .left-arrow{
+                gap:0px;
+                
+                .logo{
+                    font-size: 12px;
+                }
+            }
+
+            .right-nav{
+                align-items: center;
+                .search{
+                    width: 70%;
+                    position: relative;
+                    height: 25px;
+
+                    .icon{
+                        width: 15px;
+                        position: absolute;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar{
+        .wrapper{
+            .list-icon{
+                display: none;
+            }
+            .logo{
+                display: none;
+            }
+
+            .navlink{
+                display: none;
+            }
+            .left-arrow{
+                display: none;
+            }
+
+            .right-nav{
+                .item{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

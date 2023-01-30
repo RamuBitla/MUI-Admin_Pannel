@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+}
+.home .container {
+  flex: 6;
+}
+.home .widgetHome, .home .charts {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.home .listContainer {
+  box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  margin: 10px;
+}
+.home .listContainer .listTitle {
+  font-weight: 500;
+  color: gray;
+}/*# sourceMappingURL=Home.css.map */

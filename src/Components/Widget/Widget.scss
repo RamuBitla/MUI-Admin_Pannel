@@ -1,0 +1,114 @@
+.widget{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 15px;
+   
+    height: 120px;
+    -webkit-box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+
+    .left, .right{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .title{
+            font-size: 16px;
+            color: #888;
+            font-weight: bold;
+        }
+
+        .counter{
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .link{
+            font-size: 14px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .percentage{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            &.positive{
+                color: green;
+            }
+            &.negitive{
+                color: red;
+            }
+        }
+
+        .icon{
+            font-size: 24px;
+            align-self: flex-end;
+            border-radius: 5px;
+            padding: 5px;
+            // background-color: rgba(128, 0, 128, 0.253);
+        }
+    }
+
+    
+
+}
+
+
+//================== { MEDIA-QUARY OF WIDGET } ===================
+
+@media screen and (max-width: 375px) {
+    .widget{
+        padding: 10px;
+        height: 150px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        // gap: 5px;
+        text-align: center;
+        padding: 5px;
+    
+        .left, .right{
+            align-items: center;
+            justify-content: center;
+           gap: 5px;
+          
+    
+            .title{
+                font-size: 12px;
+            }
+    
+            .counter{
+                font-size: 16px;
+            }
+    
+            .link{
+                font-size: 7px;
+            }
+    
+            .percentage{
+                font-size: 12px;
+    
+                &.positive{
+                    color: green;
+                }
+                &.negitive{
+                    color: red;
+                }
+            }
+    
+            .icon{
+                font-size: 24px;
+                align-self: center;
+        
+            }
+        }
+    
+        
+    
+    }
+}
+

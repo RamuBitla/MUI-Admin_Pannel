@@ -1,0 +1,275 @@
+.single {
+    display: flex;
+
+    .singleContainer {
+        flex: 6;
+
+        .singleTop {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+
+            .singleLeft {
+                flex: 1;
+                -webkit-box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 5px;
+                padding: 10px;
+                position: relative;
+                height: 290px;
+                width: 100%;
+
+                .editbtn {
+                    position: absolute;
+                    top: 0%;
+                    right: 0%;
+                    color: blueviolet;
+                    background-color: rgba(137, 43, 226, 0.151);
+                    border-radius: 0px 0px 0px 5px;
+                    font-size: 14px;
+                    padding: 6px;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                }
+
+                .title {
+                    font-size: 14px;
+                    color: gray;
+                }
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    padding-top: 30px;
+                    padding-left: 20px;
+
+                    .itemImage {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        padding: 10px;
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .items {
+                            display: flex;
+                            gap: 7px;
+                            color: gray;
+                            font-size: 14px;
+                        }
+
+                        .user {
+                            font-size: 18px;
+                            color: #555;
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .singleRight {
+                flex: 2;
+            }
+        }
+
+        .singleBottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            width: 96.4%;
+            gap: 10px;
+            -webkit-box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            border-radius: 5px;
+
+
+            .title {
+                font-size: 18px;
+                color: gray;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .single {
+
+
+        .singleContainer {
+            width: 100%;
+            align-items: center;
+            padding: 0px;
+            flex: 6;
+
+            .singleTop {
+                gap: 10px;
+                padding: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                // margin-left: 10px;
+
+                .singleLeft {
+                    height: 290px;
+                    width: 100%;
+                    padding: 10px;
+                    gap: 5px;
+                    margin-left: 0px;
+
+                    .editbtn {
+                        position: absolute;
+                        top: 0%;
+                        right: 0%;
+                        color: blueviolet;
+                        background-color: rgba(137, 43, 226, 0.151);
+                        border-radius: 0px 0px 0px 5px;
+                        font-size: 12px;
+                        padding: 6px;
+                        font-weight: bold;
+                        cursor: pointer;
+
+                    }
+
+                    .title {
+                        font-size: 12px;
+                        color: gray;
+                    }
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        padding-top: 10px;
+                        padding-left: 20px;
+                        padding-bottom: 10px;
+
+
+
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            .items {
+                                font-size: 12px;
+                            }
+
+                            .user {
+                                font-size: 14px;
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                .singleRight {
+                    width: 100%;
+                    margin-right: 0px;
+                }
+            }
+
+            .singleBottom {
+                
+    
+                .title {
+                    font-size: 12px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single {
+        display: flex;
+
+        .singleContainer {
+
+            .singleTop {
+
+                gap: 10px;
+
+                .singleLeft {
+                    height: 180px;
+                    width: 100%;
+
+                    .editbtn {
+
+                        font-size: 12px;
+
+                    }
+
+                    .title {
+                        font-size: 12px;
+
+                    }
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        padding: 20px;
+
+
+
+                        .details {
+
+                            gap: 5px;
+
+                            .items {
+                                gap: 0px;
+
+                                font-size: 12px;
+                            }
+
+                            .user {
+                                font-size: 14px;
+
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                .singleRight {
+                    flex: 2;
+                }
+            }
+
+            .singleBottom {
+
+                margin-left: 23px;
+                margin-bottom: 10px;
+                width: 94%;
+
+
+
+                .title {
+                    font-size: 14px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}

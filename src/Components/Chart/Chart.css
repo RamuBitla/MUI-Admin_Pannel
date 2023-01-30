@@ -1,0 +1,16 @@
+.chart {
+  flex: 4;
+  box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: gray;
+}
+.chart .title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.chart .cartGrid {
+  stroke: rgb(233, 230, 230);
+}/*# sourceMappingURL=Chart.css.map */

@@ -1,0 +1,63 @@
+.app.dark{
+    background-color: #222;
+    color: gray;
+
+   
+    .cartGrid{
+        background-color: rgba(128, 128, 128, 0.212);
+    }
+
+    .table{
+        background-color: #111;
+       
+
+        .tablecell{
+            color: gray;
+        }
+    }
+
+    .datatable{
+        color: gray;
+
+        .datagrid{
+            color: gray;
+            border: none;
+        }
+    }
+
+    .viewbutton,.deletebutton{
+        color: gray;
+        border: 1px solid rgba(161, 160, 160, 0.301);
+    }
+
+   
+    hr{
+        border-color: rgb(71, 71, 71);
+    }
+
+    ul 
+    {
+        li{
+           &:hover{ background-color: #333; }
+        
+        .icon{
+            color: gray;
+        }
+        }
+    }
+
+    .logo{
+        color: gray;
+    }
+
+    input{
+        background-color: transparent;
+    }
+
+}
+
+a{
+    text-decoration: none;
+}
+
+

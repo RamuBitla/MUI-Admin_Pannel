@@ -1,0 +1,66 @@
+.featured {
+  flex: 2;
+  box-shadow: 3px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+}
+.featured .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+.featured .top .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.featured .bottom {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.featured .bottom .featuredChart {
+  width: 100px;
+  height: 100px;
+}
+.featured .bottom .title {
+  font-weight: 500;
+  color: gray;
+}
+.featured .bottom .amount {
+  font-weight: 300;
+  font-size: 30px;
+}
+.featured .bottom .desc {
+  font-weight: 300;
+  color: gray;
+  text-align: center;
+}
+.featured .summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+.featured .summary .item {
+  text-align: center;
+}
+.featured .summary .item .itemTitle {
+  color: gray;
+  font-size: 14px;
+}
+.featured .summary .item .itemResult {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.featured .summary .item .itemResult.positive {
+  color: green;
+}
+.featured .summary .item .itemResult.negitive {
+  color: red;
+}/*# sourceMappingURL=Featured.css.map */
